@@ -14,7 +14,7 @@ import tensorflow as tf
 # Importing and scaling the data
 dataset_train = pd.read_csv("Google_Stock_Price_Trainset.csv")
 #selecting the right column (we need all rows and column 1) : numpy array
-training_set = dataset_train.iloc[:,1:2].values
+training_set = dataset_train.iloc[:,0:1].values
 #print(dataset_train)
 print(training_set)
 
